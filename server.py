@@ -25,4 +25,8 @@ def get_data_process2(request: str):
     return res
 
 if __name__ == '__main__':
+<<<<<<< HEAD
     app.run(port=5000, debug=True)
+=======
+    app.run(port=5000, debug=True)
+>>>>>>> ab1708d1c18a3a506cd32ff1006e380e03016f10
