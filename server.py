@@ -1,4 +1,3 @@
-
 from flask import Flask, request, jsonify
 
 from main import process1, process2
@@ -9,8 +8,8 @@ app = Flask(__name__)
 def index():
     return jsonify({'message': 'Welcome'})
 
-# TODO: Create a flask app with two routes, one for each function.
-# The route should get the data from the request, call the function, and return the result.
+ # TODO: Create a flask app with two routes, one for each function.
+ # The route should get the data from the request, call the function, and return the result.
 
 @app.route('/process1', methods=['POST'])
 def get_data_process1(request: str):
@@ -25,8 +24,4 @@ def get_data_process2(request: str):
     return res
 
 if __name__ == '__main__':
-<<<<<<< HEAD
     app.run(port=5000, debug=True)
-=======
-    app.run(port=5000, debug=True)
->>>>>>> ab1708d1c18a3a506cd32ff1006e380e03016f10
